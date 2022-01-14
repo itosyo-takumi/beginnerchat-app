@@ -54,13 +54,14 @@
 .chat-header {
   height: 100px;
   padding: 0 40px;
+  background-color: #008080;
   display: flex;
   justify-content: space-between;
 }
 
 .header-title {
-  color: #333;
-  font-size: 24px;
+  color: #FAFAFA;
+  font-size: 40px;
   margin-top: 36px;
 }
 
@@ -70,14 +71,14 @@
 
 .header-button a {
   text-decoration: none;
-  border: 1px solid darkred;
-  color: darkred;
+  border: 1px solid #FAFAFA;
+  color: #FAFAFA;
   padding: 20px;
 }
 
 .messages {
   background-color: #FAFAFA;
-  height: calc(100vh - 100px - 90px);
+  height: calc(100vh - 100px - 200px);
   padding: 46px 40px 0;
   overflow: scroll;
 }
@@ -113,7 +114,7 @@
 
 .form{
   background-color: #DDDDDD;
-  height: 90px;
+  height: 200px;
   padding: 20px 40px;
   display: flex;
 }
@@ -146,8 +147,9 @@
   background-color: lightblue;
   color: white;
   padding: 12px;
-  width: 60px;
-  margin: 5px 10px;
+  width: 70px;
+  height: 50px;
+  margin: 3px 3px;
   text-align: center;
 }
 
