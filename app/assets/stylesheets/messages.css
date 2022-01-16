@@ -112,6 +112,10 @@
   margin-bottom: 40px;
 }
 
+.message-content h2 {
+  color: black
+}
+
 .form{
   background-color: #DDDDDD;
   height: 200px;
@@ -127,7 +131,7 @@
 
 .form-message {
   border: none;
-  height: 50px;
+  height: 160px;
   width: 100%;
   padding-left: 10px;
 }

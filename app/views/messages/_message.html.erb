@@ -12,8 +12,9 @@
   <div class="lower-message">
     <div class="message-content">
       <!-- 投稿したメッセージ内容を記述する -->
-      <%= message.content %>
+      <%= markdown(message.content) %>
+
     </div>
-    <%= image_tag message.image.variant(resize: '400x400'), class: 'message-image' if message.image.attached? %>
+    <%= image_tag message.image.variant(resize: '350x350'), class: 'message-image' if message.image.attached? %>
   </div>
 </div>
