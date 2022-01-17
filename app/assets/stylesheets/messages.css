@@ -160,3 +160,8 @@
 .hidden {
   display: none;
 }
+
+.code {
+  background-color: #d5cccc;
+  padding: 10px;
+}

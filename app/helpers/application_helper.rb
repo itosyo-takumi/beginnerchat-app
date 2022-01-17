@@ -37,7 +37,8 @@ module ApplicationHelper
       link_attributes: true,     # リンクに追加する追加属性のハッシュ。
     }
 
-    renderer = Redcarpet::Render::HTML.new(options)
+    #renderer = Redcarpet::Render::HTML.new(options)
+    renderer = HTMLwithCoderay.new(options)
     markdown = Redcarpet::Markdown.new(renderer, extensions)
 
     markdown.render(text).html_safe
@@ -46,7 +47,7 @@ module ApplicationHelper
   # 言語での記述（シンタックスハイライト）の導入（coderay）
   class HTMLwithCoderay < Redcarpet::Render::HTML
     def block_code(code, language)
-      language = language.split(':')[0]
+      language = language.split(':')[0] if language.present?
       
       case language.to_s
       when 'rb'         # rb も rubyと認識させる。って意味。
